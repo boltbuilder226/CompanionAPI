@@ -1,0 +1,6 @@
+name: CompanionAPI
+main: com.CompanionAPI
+version: 1.0.0
+
+description: A helpful API to shorten code in making plugins
+author: boltbuilder226
