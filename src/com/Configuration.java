@@ -3,6 +3,7 @@ package com;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
@@ -92,10 +93,13 @@ public class Configuration {
      * @throws InvalidConfigurationException
      *             If there is an invalid configuration
      */
-    public static FileConfiguration createConfig(File file)
-            throws FileNotFoundException, InvalidConfigurationException {
+    public static FileConfiguration createConfig(File file){
         if (!file.exists()) {
-            throw new FileNotFoundException();
+            try {
+                file.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         return YamlConfiguration.loadConfiguration(file);
     }
