@@ -1,5 +1,6 @@
-package com;
+package com.companion.api;
 
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class CompanionAPI extends JavaPlugin {
@@ -18,6 +19,10 @@ public class CompanionAPI extends JavaPlugin {
 	
 	public static CompanionAPI getInstance() {
 		return instance;
+	}
+	
+	public static void debug(String message) {
+	    Bukkit.broadcastMessage(message);
 	}
 
 }

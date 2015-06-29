@@ -1,4 +1,4 @@
-package com;
+package com.companion.api;
 
 import java.util.HashMap;
 

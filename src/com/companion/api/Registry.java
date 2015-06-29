@@ -1,4 +1,4 @@
-package com;
+package com.companion.api;
 
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.event.Listener;

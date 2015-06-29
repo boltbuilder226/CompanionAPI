@@ -1,4 +1,4 @@
-package com;
+package com.companion.api;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
